@@ -13,11 +13,21 @@ import v9 from "../glassesImage/v9.png";
 
 class Container extends Component {
   state = {
-    image: v7,
+    image: { name: "GUCCI G8850U", imgSrc: v1, price: "$30" },
   };
-  listImage = [v1, v2, v3, v4, v5, v6, v7, v8, v9];
-  changeImage = (image) => {
-    this.setState({ image });
+  listImage = [
+    { name: "GUCCI G8850U", imgSrc: v1, price: "$30" },
+    { name: "GUCCI G8759H", imgSrc: v2, price: "$50" },
+    { name: "DIOR D6700HQ", imgSrc: v3, price: "$30" },
+    { name: "DIOR DIOR D6005U", imgSrc: v4, price: "$30" },
+    { name: "PRADA P8750", imgSrc: v5, price: "$30" },
+    { name: "PRADA P9700", imgSrc: v6, price: "$30" },
+    { name: "FENDI F8750", imgSrc: v7, price: "$30" },
+    { name: "FENDI F8500", imgSrc: v8, price: "$30" },
+    { name: "FENDI F4300", imgSrc: v9, price: "$30" },
+  ];
+  changeImage = (item) => {
+    this.setState({ image: item });
   };
   render() {
     return (

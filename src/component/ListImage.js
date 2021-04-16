@@ -14,7 +14,7 @@ class ListImage extends Component {
               }}
             >
               <img
-                src={item}
+                src={item.imgSrc}
                 alt="hinh"
                 style={{ width: 100, borderRadius: 20 }}
               />
